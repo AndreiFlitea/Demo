@@ -38,7 +38,7 @@ if(isset($_SESSION['username'])) { // check if the session variable "username" h
   </div>
 
   <nav>
-    <a href="#"><?php echo $user['first_name']; ?></i></i></a>
+    <a href="<?php echo $userLoggedIn ?>"><?php echo $user['first_name']; ?></i></i></a>
     <a href="index.php"><i class="fa-solid fa-house"></i></i></a>
     <a href="#"><i class="fa-solid fa-envelope"></i></a>
     <a href="#"><i class="fa-solid fa-bell"></i></a>
