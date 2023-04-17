@@ -1,7 +1,14 @@
 <?php 
 include('includes/header.php');
 include('includes/classes/User.php');
+include('includes/classes/Post.php');
 // session_destroy();
+
+if(isset($_POST['post'])) {
+    $post = new Post($con, $userLoggedIn);
+    $post->submitPost($_POST['post_text'], 'none');
+    header("Location: index.php"); //Prevents form repost on refresh
+}
 ?>
 
    
@@ -26,9 +33,8 @@ include('includes/classes/User.php');
         </form>
 
         <?php 
-        $user_obj = new User($con, $userLoggedIn);
-        echo $user_obj -> getFirstAndLastName(); 
-        
+            $post = new Post($con, $userLoggedIn);
+            echo $post->loadPostsFriends();
         ?> 
     </div>
 

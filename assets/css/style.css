@@ -122,3 +122,19 @@ nav a:hover {
     padding: 5px 4px 4px 5px;
 }
 
+.status_post {
+    display: flex;
+    width: 96%;
+    font-size: 15px;
+    padding: 0px;
+    min-height: 75px;
+}
+
+.post_content {
+    margin-left: 5px;
+}
+
+.post_profile_pic img {
+    border-radius: 25px;
+}
+

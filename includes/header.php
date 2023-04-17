@@ -44,7 +44,8 @@ if(isset($_SESSION['username'])) { // check if the session variable "username" h
     <a href="#"><i class="fa-solid fa-bell"></i></a>
     <a href="#"><i class="fa-solid fa-users"></i></i></a>
     <a href="#"><i class="fa-sharp fa-solid fa-gear"></i></a>
-    <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+    <a href="includes/handlers/logout.php"><i class="fa-solid fa-right-from-bracket"></i></a>
+   
 
   </nav>
 </div>
